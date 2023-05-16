@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, isStandalone } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'quest03.1';
+  title = 'Bonjour et bienvenue sur la solution de la quete 03.1 (oui je sais c\'est long mais j\aime bien écrire des trucs longs pour voir si ça rend aussi bien que des trucs plus courts)';
+  isAdmin : boolean = false;
+  changeValue = () => this.isAdmin = !this.isAdmin
+  
 }
